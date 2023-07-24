@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      lg: "1300px",
+    },
     colors: {
       transparent: "transparent",
       primary: "#D73939",
