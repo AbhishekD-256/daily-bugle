@@ -930,9 +930,6 @@ video {
 .group:hover .group-hover\:fill-white {
   fill: #ffffff;
 }
-.group:hover .group-hover\:font-bold {
-  font-weight: 700;
-}
 .group:hover .group-hover\:text-text {
   --tw-text-opacity: 1;
   color: rgb(135 135 135 / var(--tw-text-opacity));
