@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily-Bugle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script defer src="main.js"></script><link href="styles/style.css" rel="stylesheet"></head>
+
+<body class="bg-offwhite  flex  text-body overflow-hidden">
+
+    <aside
+        class="p-md  rounded-r-lg  bg-white  shrink-0  w-side  h-screen  overflow-y-auto  flex flex-col  justify-between  z-0">
+        <div>
+            <figure class="pb-lg  sticky top-[0px]  bg-white  z-40">
+                <img src="https://ik.imagekit.io/abhiimages/images/daily-buggle.jpg?updatedAt=1689941048759"
+                    alt="daily bugle logo">
+            </figure>
+
+            <nav class="bg-white">
+                <a class="flex  hover:bg-primary  p-sm  rounded-md  group" href="javascript: void(0)">
+                    <svg class="icon  w-icon  h-icon  mr-md  group-hover:fill-white  fill-text">
+                        <use href="images/sprite.svg#home"></use>
+                    </svg>
+                    <span class="group-hover:text-white  group-hover:font-bold text-text">Home</span>
+                </a>
+                <a class="flex  hover:bg-primary  p-sm  rounded-md  group" href="javascript: void(0)">
+                    <svg class="icon  w-icon  h-icon  mr-md  group-hover:fill-white">
+                        <use href="images/sprite.svg#explore"></use>
+                    </svg>
+                    <span class="group-hover:text-white  group-hover:font-bold text-text">Explore</span>
+                </a>
+                <a class="flex  hover:bg-primary  p-sm  rounded-md  group" href="javascript: void(0)">
+                    <svg class="icon  w-icon  h-icon  mr-md">
+                        <use href="images/sprite.svg#saved"></use>
+                    </svg>
+                    <span class="group-hover:text-white  group-hover:font-bold text-text">Saved</span>
+                </a>
+                <a class="flex justify-between items-center hover:bg-primary  p-sm  rounded-md  group"
+                    href="javascript: void(0)">
+                    <div class="flex">
+                        <svg class="icon  w-icon  h-icon  mr-md">
+                            <use href="images/sprite.svg#subscription"></use>
+                        </svg>
+                        <span class="group-hover:text-white  group-hover:font-bold text-text">Subscription</span>
+                    </div>
+                    <div></div>
+                </a>
+                <a class="flex  justify-between items-center hover:bg-primary  p-sm  rounded-md  group"
+                    href="javascript: void(0)">
+                    <div class="flex">
+                        <svg class="icon  w-icon  h-icon  mr-md">
+                            <use href="images/sprite.svg#message"></use>
+                        </svg>
+                        <span class="group-hover:text-white  group-hover:font-bold text-text">Message</span>
+                    </div>
+                    <div
+                        class="bg-primary  min-h-[24px]  min-w-[24px] text-center p-[4px] rounded-[100px] text-white  text-xsm group-hover:text-text  group-hover:bg-white">
+                        8
+                    </div>
+                </a>
+                <a class="flex  hover:bg-primary  p-sm  rounded-md  group" href="javascript: void(0)">
+                    <svg class="icon  w-icon  h-icon  mr-md">
+                        <use href="images/sprite.svg#settings"></use>
+                    </svg>
+                    <span class="group-hover:text-white  group-hover:font-bold text-text">Settings</span>
+                </a>
+            </nav>
+        </div>
+        <div>
+            <a class="flex  hover:bg-secondary  p-sm  rounded-md  group" href="javascript: void(0)">
+                <svg class="w-icon  h-icon  mr-md">
+                    <use href="images/sprite.svg#logout"></use>
+                </svg>
+                <span class="text-text">Logout</span>
+            </a>
+
+            <div class="border-t-2  border-text  py-lg  mt-xsm  text-center">
+                <div class="relative  p-lg  w-[240px]  flex  flex-col  items-center   rounded-lg  shadow-lg  bg-white">
+                    <span class="p-sm  rounded-sm  bg-lightorange  mb-icon">
+                        <svg class="w-lg  h-lg">
+                            <use href="images/sprite.svg#fire"></use>
+                        </svg>
+                    </span>
+                    <h3 class="font-bold  max-w-[160px] mb-xsm  text-darkblue">
+                        Subscribe to our
+                        new plan <span class="text-[#FB6D3A]  underline">$25</span>
+                    </h3>
+                    <p class="mb-lg">It is a limited time offer that will expire soon.</p>
+                    <a class="inline-block  bg-primary  text-white  font-bold  p-sm  rounded-sm"
+                        href="javascript: void(0)">
+                        Subscribe now
+                        <svg class="w-sm  h-sm  ml-sm-icon  inline-block">
+                            <use href="images/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                    <button class="bg-transparent  absolute  top-sm   right-sm">
+                        <img src="images/close.png" alt="close button">
+                    </button>
+                    <span class="absolute  h-320  w-[208px]  bg-white  rounded-lg  shadow-md  -z-10  top-lg"></span>
+                    <span
+                        class="absolute  h-320  w-[176px]  bg-white  rounded-lg  shadow-md  -z-20  top-[44px] "></span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="grow">
+        <header class="flex  justify-between  p-lg">
+            <div class="flex  gap-lg  text-darkblue  font-semibold">
+                <div class="flex  items-center">
+                    <svg class="w-icon  h-icon  mr-sm">
+                        <use href="images/sprite.svg#location"></use>
+                    </svg>
+                    <span>Second Avenue, NYC</span>
+                    <svg class="w-[16px]  h-[16px]  ml-[6px]">
+                        <use href="images/sprite.svg#options"></use>
+                    </svg>
+                </div>
+                <div class="flex  items-center">
+                    <svg class="w-icon  h-icon  mr-sm">
+                        <use href="images/sprite.svg#analysis"></use>
+                    </svg>
+                    <span>Analysis</span>
+                    <svg class="w-[16px]  h-[16px]  ml-[6px]">
+                        <use href="images/sprite.svg#options"></use>
+                    </svg>
+                </div>
+                <div class="flex  items-center">
+                    <svg class="w-icon  h-icon  mr-sm">
+                        <use href="images/sprite.svg#calendar"></use>
+                    </svg>
+                    <span>Monthly</span>
+                    <svg class="w-[16px]  h-[16px]  ml-[6px]">
+                        <use href="images/sprite.svg#options"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="flex  items-center  gap-sm">
+                <div class="relative">
+                    <img class="absolute top-sm left-sm w-md  h-md" src="images/search.png" alt="search icon">
+                    <input class="w-[385px]  text-md  py-[12px]  pl-48  rounded-md  text-darkblue" type="text"
+                        placeholder="Search for anything…">
+                </div>
+                <div class="w-48  h-48  bg-primary  rounded-sm  cursor-pointer  flex  items-center  justify-center">
+                    <svg class="w-md  h-md">
+                        <use href="images/sprite.svg#filter"></use>
+                    </svg>
+                </div>
+                <figure class="w-48  h-48  rounded-full  overflow-hidden  border-2  border-primary  cursor-pointer">
+                    <img src="images/profile.jpg" alt="user profile picture">
+                </figure>
+            </div>
+        </header>
+
+        <main class="main  h-hfit overflow-y-auto  px-lg  pb-lg">
+            <section class="mb-48">
+                <div class="flex  justify-between  items-center  mb-lg">
+                    <h2 class="text-lg  text-darkblue  font-bold">Explore Channels</h2>
+                    <div class="flex  items-center  text-primary  cursor-pointer">
+                        <span>See all</span>
+                        <svg class="w-sm-icon  h-sm-icon">
+                            <use href="images/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="flex  gap-lg  flex-wrap">
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/fox-news.png?updatedAt=1689939868431"
+                            alt="fox news channel">
+                        <span class="uppercase  font-bold ">FOX nEwS</span>
+                    </li>
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/cw6-news.png?updatedAt=1689939868428"
+                            alt="cw6 news channel">
+                        <span class="uppercase  font-bold ">CW6 NEWS</span>
+                    </li>
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/abc-news.png?updatedAt=1689939868436"
+                            alt="abc news channel">
+                        <span class="uppercase  font-bold ">ABC NEWS</span>
+                    </li>
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/al-jazeera.png?updatedAt=1689939868444"
+                            alt="al jazeera news channel">
+                        <span class="uppercase  font-bold ">AL JAZEERA</span>
+                    </li>
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/bbc-news.png?updatedAt=1689939868421"
+                            alt="bbc news channel">
+                        <span class="uppercase  font-bold ">BBC NEWS</span>
+                    </li>
+                    <li
+                        class="p-sm  bg-white  w-[152px]  h-[158px]  shadow-sm  rounded-md  flex  flex-col  items-center  justify-center  gap-md  cursor-pointer">
+                        <img class="h-[60px]  object-contain"
+                            src="https://ik.imagekit.io/abhiimages/images/cnn-news.png?updatedAt=1689939868423"
+                            alt="cnn news channel">
+                        <span class="uppercase  font-bold ">CNN NEWS</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="mb-48">
+                <div class="flex  justify-between  items-center  mb-lg">
+                    <h2 class="text-lg  text-darkblue  font-bold">Today’s Headlines</h2>
+                    <div class="flex  items-center  text-primary  cursor-pointer">
+                        <span>See all</span>
+                        <svg class="w-sm-icon  h-sm-icon">
+                            <use href="images/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="flex  gap-lg  flex-wrap">
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/knocked-down.jpg?updatedAt=1689941048606"
+                                alt="king pin knocked down">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">King Pin knocked Down</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">10.8k</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    BBC
+                                    NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/not-at-work.jpg?updatedAt=1689941048629"
+                                alt="your tax dollars not at work">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">Your tax dollars not at work</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">10.8k</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">3.4k</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    BBC
+                                    NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/disorganized-crime.jpg?updatedAt=1689941048766"
+                                alt="disorganised crime">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">Disorganised crime</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">20.8k</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">1.1k</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    BBC
+                                    NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/off-the-streets.jpg?updatedAt=1689941048825"
+                                alt="Off the streets... into homes">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">Off the streets... into homes</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">0</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">20k</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    ABC NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/art%20attack.jpg?updatedAt=1689941048762"
+                                alt="Art Attack">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">Art Attack</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">10.8k</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">1.4k</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    CW6 NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="w-336  flex  gap-sm">
+                        <figure class="w-[102px]  h-[96px]  rounded-sm  overflow-hidden">
+                            <img class="h-full w-full"
+                                src="https://ik.imagekit.io/abhiimages/images/big-shock.jpg?updatedAt=1689941048608"
+                                alt="Big Shock">
+                        </figure>
+                        <div class="py-1  flex  flex-col justify-between  grow">
+                            <h3 class="font-bold  truncate  max-w-[190px]">Big Shock</h3>
+                            <div class="flex  gap-md">
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="text-sm">10.8k</span>
+                                </div>
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon  cursor-pointer">
+                                        <use href="images/sprite.svg#dislike"></use>
+                                    </svg>
+                                    <span class="text-sm">0k</span>
+                                </div>
+                            </div>
+                            <div class="flex  justify-between  items-center">
+                                <span
+                                    class="uppercase  text-primary  text-xsm  font-semibold  p-xsm  rounded-xsm  bg-badge">
+                                    CNN NEWS</span>
+
+                                <div class="flex  items-center  gap-xsm">
+                                    <svg class="w-sm-icon  h-sm-icon">
+                                        <use href="images/sprite.svg#clock-dark"></use>
+                                    </svg>
+                                    <span class="text-sm">2:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="flex  justify-between  items-center  mb-lg">
+                    <h2 class="text-lg  text-darkblue  font-bold">Featured News</h2>
+                    <div class="flex  items-center  text-primary  cursor-pointer">
+                        <span>See all</span>
+                        <svg class="w-sm-icon  h-sm-icon">
+                            <use href="images/sprite.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <ul class="flex  flex-wrap  gap-lg">
+                    <li class="w-336  h-[246px]  relative  rounded-t-md  overflow-hidden">
+                        <figure class="h-full">
+                            <img class="h-full  w-full  object-cover"
+                                src="https://ik.imagekit.io/abhiimages/images/what-campaign.jpg?updatedAt=1689941048808"
+                                alt="what-campaign">
+                        </figure>
+                        <div class="bg-primary  p-xsm  absolute  bottom-0  left-0  w-full ">
+                            <p class="font-bold  text-white  max-w-[216px]">Harry’s passion project: What campaign?</p>
+                        </div>
+                        <div class="flex  items-center  gap-xsm  absolute  right-xsm  bottom-[56px]">
+                            <svg class="w-sm-icon  h-sm-icon">
+                                <use href="images/sprite.svg#clock-light"></use>
+                            </svg>
+                            <span class="text-sm  text-white ">2:00 pm</span>
+                        </div>
+                    </li>
+                    <li class="w-336  h-[246px]  relative  rounded-t-md  overflow-hidden">
+                        <figure class="h-full">
+                            <img class="h-full  w-full  object-cover"
+                                src="https://ik.imagekit.io/abhiimages/images/gang-war.jpg?updatedAt=1689941048833"
+                                alt="what-campaign">
+                        </figure>
+                        <div class="bg-primary  p-xsm  absolute  bottom-0  left-0  w-full ">
+                            <p class="font-bold  text-white  max-w-[216px]">Home sweet home:Gang War</p>
+                        </div>
+                        <div class="flex  items-center  gap-xsm  absolute  right-xsm  bottom-[56px]">
+                            <svg class="w-sm-icon  h-sm-icon">
+                                <use href="images/sprite.svg#clock-light"></use>
+                            </svg>
+                            <span class="text-sm  text-white ">2:00 pm</span>
+                        </div>
+                    </li>
+                    <li class="w-336  h-[246px]  relative  rounded-t-md  overflow-hidden">
+                        <figure class="h-full">
+                            <img class="h-full  w-full  object-cover"
+                                src="https://ik.imagekit.io/abhiimages/images/chance-of-crane.jpg?updatedAt=1689941048706"
+                                alt="what-campaign">
+                        </figure>
+                        <div class="bg-primary  p-xsm  absolute  bottom-0  left-0  w-full ">
+                            <p class="font-bold  text-white  max-w-[216px]">And the award goes to... 100% chance of
+                                crane</p>
+                        </div>
+                        <div class="flex  items-center  gap-xsm  absolute  right-xsm  bottom-[56px]">
+                            <svg class="w-sm-icon  h-sm-icon">
+                                <use href="images/sprite.svg#clock-light"></use>
+                            </svg>
+                            <span class="text-sm  text-white ">2:00 pm</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
