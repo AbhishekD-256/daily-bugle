@@ -1,3 +1,4 @@
+import { list } from "postcss";
 import "./sass/main.scss";
 
 const headlinesContainer = document.getElementById("todays-headlines");
@@ -58,7 +59,8 @@ document.addEventListener("click", function (e) {
     dropdownList.classList.toggle("hidden");
     const listItem = e.target;
     if (!listItem.classList.contains("dropdown-item")) return;
+    const selectedName = listItem.textContent.toLowerCase();
     curItemName.textContent = listItem.textContent;
-    getData(listItem.textContent);
+    getData(selectedName);
   }
 });
