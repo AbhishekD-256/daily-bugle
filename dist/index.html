@@ -113,8 +113,8 @@
     <main class="grow">
         <header
             class="flex  p-lg  flex-wrap-reverse  justify-center  gap-sm lg:flex-nowrap  lg:justify-between   lg:gap-0">
-            <div class="flex  gap-lg  text-darkblue  font-semibold">
-                <div class="flex  items-center">
+            <ul class="flex  gap-lg  text-darkblue  font-semibold">
+                <li class="flex  items-center">
                     <svg class="w-icon  h-icon  mr-sm">
                         <use href="images/sprite.svg#location"></use>
                     </svg>
@@ -122,17 +122,31 @@
                     <svg class="w-[16px]  h-[16px]  ml-[6px]">
                         <use href="images/sprite.svg#options"></use>
                     </svg>
-                </div>
-                <div class="flex  items-center">
-                    <svg class="w-icon  h-icon  mr-sm">
-                        <use href="images/sprite.svg#analysis"></use>
-                    </svg>
-                    <span>Analysis</span>
+
+                </li>
+                <li id="js-dropdown" class="flex  items-center  cursor-pointer  relative">
+                    <span id="selected-item" class="capitalize">Home</span>
                     <svg class="w-[16px]  h-[16px]  ml-[6px]">
                         <use href="images/sprite.svg#options"></use>
                     </svg>
-                </div>
-                <div class="flex  items-center">
+                    <ul id="dropdown-list"
+                        class="absolute top-48  left-0  bg-white  shadow-sm  p-sm rounded-sm  z-10  hidden">
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">arts</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">automobiles</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">books</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">business</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">fashion</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">food</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">home</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">insider</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">movies</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">nyregion</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">obituaries</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">realestate</li>
+                        <li class="dropdown-item  p-xsm  cursor-pointer  hover:bg-secondary">sports</li>
+                    </ul>
+                </li>
+                <li class="flex  items-center">
                     <svg class="w-icon  h-icon  mr-sm">
                         <use href="images/sprite.svg#calendar"></use>
                     </svg>
@@ -140,8 +154,8 @@
                     <svg class="w-[16px]  h-[16px]  ml-[6px]">
                         <use href="images/sprite.svg#options"></use>
                     </svg>
-                </div>
-            </div>
+                </li>
+            </ul>
 
             <div class="flex  items-center  gap-sm">
                 <div class="relative">
