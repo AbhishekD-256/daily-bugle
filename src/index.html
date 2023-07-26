@@ -110,7 +110,7 @@
         </div>
     </aside>
 
-    <div class="grow">
+    <main class="grow">
         <header
             class="flex  p-lg  flex-wrap-reverse  justify-center  gap-sm lg:flex-nowrap  lg:justify-between   lg:gap-0">
             <div class="flex  gap-lg  text-darkblue  font-semibold">
@@ -162,7 +162,7 @@
             </div>
         </header>
 
-        <main class="overflow-y-auto  px-lg  pb-lg  h-[calc(100vh-154px)]  lg:h-[calc(100vh-112px)]">
+        <section class="overflow-y-auto  px-lg  pb-lg  h-[calc(100vh-154px)]  lg:h-[calc(100vh-112px)]">
             <section class="mb-48">
                 <div class="flex  justify-between  items-center  mb-lg">
                     <h2 class="text-lg  text-darkblue  font-bold">Explore Channels</h2>
@@ -219,7 +219,7 @@
                 </ul>
             </section>
 
-            <section class="mb-48">
+            <div class="mb-48">
                 <div class="flex  justify-between  items-center  mb-lg">
                     <h2 class="text-lg  text-darkblue  font-bold">Today’s Headlines</h2>
                     <div class="flex  items-center  text-primary  cursor-pointer" id="see-all">
@@ -229,10 +229,10 @@
                         </svg>
                     </div>
                 </div>
-                <ul class="flex  gap-lg  flex-wrap" id="todays-headlines">
+                <ul class="flex  gap-lg  flex-wrap  min-h-[250px]" id="todays-headlines">
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div>
                 <div class="flex  justify-between  items-center  mb-lg">
                     <h2 class="text-lg  text-darkblue  font-bold">Featured News</h2>
                     <div class="flex  items-center  text-primary  cursor-pointer">
@@ -294,9 +294,9 @@
                         </div>
                     </li>
                 </ul>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
