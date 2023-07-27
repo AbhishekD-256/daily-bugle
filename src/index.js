@@ -31,14 +31,30 @@ function renderHeadlines(results, index) {
   }
 }
 
+function renderError(error) {
+  headlinesContainer.innerHTML = "";
+  const errorHtml = `
+    <li class= "flex  items-center  justify-center  w-full">
+      <p class="text-darkblue  text-lg"> ${error.message} </p>
+      </li>
+  `;
+  headlinesContainer.insertAdjacentHTML("beforeend", errorHtml);
+}
+
 async function getData(section = "home") {
-  seeAll = false;
-  const response = await fetch(
-    `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=bAyMmUuJ8Aa2hOxXViAcZBdgKjrIenYU`
-  );
-  const data = await response.json();
-  results = data.results;
-  renderHeadlines(results, 7);
+  try {
+    seeAll = false;
+    const response = await fetch(
+      `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=bAyMmUuJ8Aa2hOxXViAcZBdgKjrIenYU`
+    );
+    if (!response.ok)
+      throw new Error("Unable to load... try agian after sometime :(");
+    const data = await response.json();
+    results = data.results;
+    renderHeadlines(results, 7);
+  } catch (error) {
+    renderError(error);
+  }
 }
 getData();
 
